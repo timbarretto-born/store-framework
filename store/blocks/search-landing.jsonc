@@ -12,13 +12,42 @@
         }
     },
     "search-result-layout.customQuery#landing": {
+        "blocks": [
+          "search-result-layout.desktop#landing",
+          "search-result-layout.mobile",
+          "search-not-found-layout"
+        ],
       "props": {
         "querySchema": {
           "orderByField": "OrderByReleaseDateDESC",
           "hideUnavailableItems":"true",
           "maxItemsPerPage":"8",
-          "query":"Blue Top Retro Camera"
+          "queryField":"sneakers",
+          "mapField":"ft"
         }
       }
+    },
+     "search-result-layout.desktop#landing": {
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#searchtitle",
+            "flex-layout.row#result"
+        ]
+     },
+    "flex-layout.row#searchbread": {
+        "children": [
+            "breadcrumb.search"
+         ]
+    },
+    "flex-layout.row#searchtitle": {
+        "children": [
+             "search-title.v2"
+         ]
+    },
+    "flex-layout.row#result": {
+        "children": [
+             "flex-layout.row#results"
+         ]
     }
+
 }
