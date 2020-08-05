@@ -1,0 +1,24 @@
+{
+    "store.custom#landing": {
+        "blocks": [
+            "image#landingbanner",
+            "search-result-layout.customQuery#landing"
+        ]
+    },
+    "image#landingbanner": {
+        "props": {
+         "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+         "minWidth": "100%"
+        }
+    },
+    "search-result-layout.customQuery#landing": {
+      "props": {
+        "querySchema": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems":"true",
+          "maxItemsPerPage":"8",
+          "query":"Blue Top Retro Camera"
+        }
+      }
+    }
+}
