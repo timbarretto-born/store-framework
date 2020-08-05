@@ -11,6 +11,12 @@
        "header-row#main"
      ]
    },
+   "header-layout.mobile": {
+     "children": [
+       "header-row#notification",
+       "header-row#main-mobile"
+     ]
+   },
     "header-row#notification": {
       "children": [
         "header-spacer",
